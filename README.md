@@ -71,8 +71,9 @@
 
 정적 파일이라 어디든 올릴 수 있습니다.
 
-- **GitHub Pages**: 저장소 → Settings → Pages → Source `Deploy from a branch` → Branch `main` / `/ (root)`.
-- 수정 후 `git add -A && git commit -m "2026.11.18 특가 업데이트" && git push` 하면 1~2분 뒤 사이트에 반영됩니다.
+- **GitHub Pages**: 지금은 `gh-pages` 브랜치 / `/ (root)` 를 배포본으로 쓰고 있습니다. (`main`은 작업 원본, `gh-pages`는 배포 사본)
+- 수정할 때: `main`에서 고치고 커밋한 뒤 `git push origin main` → `git push origin main:gh-pages` 순서로 올리면 1~2분 뒤 사이트에 반영됩니다.
+- `Settings → Pages`에서 Branch를 `main`으로 바꾸면 `main`에 바로 푸시해도 배포되지만, 지금 설정으로도 사이트는 정상 동작합니다.
 
 ## 가격·이미지 출처와 주의
 
